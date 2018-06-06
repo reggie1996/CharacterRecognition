@@ -40,7 +40,7 @@ public interface BaiduOCRService {
     Observable<RecognitionResultBean> getRecognitionResultByUrl(@Field("access_token") String accessToken, @Field("url") String url);
 
     /**
-     * 通过图片
+     * 通过图片，获取图片内的文字信息
      * @param accessToken 通过API Key和Secret Key获取的access_token
      * @param image 图像数据base64编码后进行urlencode后的String
      * @return  observable对象用于rxjava,从RecognitionResultBean中可以获得图片文字识别的信息

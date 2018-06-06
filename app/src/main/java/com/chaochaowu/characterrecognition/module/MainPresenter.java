@@ -22,8 +22,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * @author chaochaowu
- * @Description :
- * @classes :
+ * @Description : MainPresenter
+ * @class : MainPresenter
  * @time Create at 6/4/2018 4:21 PM
  */
 
@@ -34,9 +34,9 @@ public class MainPresenter implements MainContract.Presenter{
     private BaiduOCRService baiduOCRService;
 
     private static final String CLIENT_CREDENTIALS = "client_credentials";
-    private static final String API_KEY = "G18MccziGf7iyHK5CCPIjHXZ";
-    private static final String SECRET_KEY = "XeMNckK8w8RiCHIfGUzyvcYAX7rSYSux";
-    private static final String ACCESS_TOKEN = "24.d22914a2d4e819b0a5ec69126bd2de86.2592000.1530693758.282335-11347860";
+    private static final String API_KEY = "G18Mcczi替换自己的API_KEY_CPIjHXZ";
+    private static final String SECRET_KEY = "XeMNck替换自己的SECRET_KEY_YAX7rSYSux";
+    private static final String ACCESS_TOKEN = "24.d22914a替换自己的ACCESS_TOKENec69126bd2de86.2592000.1530693758.282335-11347860";
 
     public MainPresenter(MainContract.View mView) {
 
@@ -116,7 +116,7 @@ public class MainPresenter implements MainContract.Presenter{
 
 
     @Override
-    public void getRecognitionResultByImage(final Context mContext, Bitmap bitmap) {
+    public void getRecognitionResultByImage(Bitmap bitmap) {
 
         String encodeResult = bitmapToString(bitmap);
 

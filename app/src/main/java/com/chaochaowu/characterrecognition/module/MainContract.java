@@ -5,8 +5,8 @@ import android.graphics.Bitmap;
 
 /**
  * @author chaochaowu
- * @Description :
- * @classes :
+ * @Description : MainContract
+ * @class : MainContract
  * @time Create at 6/4/2018 4:21 PM
  */
 
@@ -19,7 +19,7 @@ public interface MainContract {
 
     interface Presenter{
         void getAccessToken();
-        void getRecognitionResultByImage(Context mContext, Bitmap bitmap);
+        void getRecognitionResultByImage(Bitmap bitmap);
         void getRecognitionResultByUrl(String url);
     }
 

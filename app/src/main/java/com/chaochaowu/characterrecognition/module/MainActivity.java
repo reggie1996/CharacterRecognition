@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     Uri imageUri;
 
     private static final int PERMISSIONS_REQUEST_CODE = 1;
-    private static final int CAMERA_REQUEST_CODE = 1;
+    private static final int CAMERA_REQUEST_CODE = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,7 +114,6 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         }else {
             return true;
         }
-
     }
 
     @Override
@@ -135,9 +134,9 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CAMERA_REQUEST_CODE) {
-            Bitmap photo = BitmapFactory.decodeFile(mTmpFile.getAbsolutePath());
-            mPresenter.getRecognitionResultByImage(this,photo);
-            imageView.setImageBitmap(photo);
+                Bitmap photo = BitmapFactory.decodeFile(mTmpFile.getAbsolutePath());
+                mPresenter.getRecognitionResultByImage(photo);
+                imageView.setImageBitmap(photo);
         }
     }
 
