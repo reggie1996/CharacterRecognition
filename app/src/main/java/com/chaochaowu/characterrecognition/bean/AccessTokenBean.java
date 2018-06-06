@@ -2,8 +2,8 @@ package com.chaochaowu.characterrecognition.bean;
 
 /**
  * @author chaochaowu
- * @Description :
- * @classes :
+ * @Description : AccessTokenBean
+ * @class : AccessTokenBean
  * @time Create at 6/4/2018 4:27 PM
  */
 
@@ -11,7 +11,7 @@ package com.chaochaowu.characterrecognition.bean;
 public class AccessTokenBean {
 
     /**
-     * refresh_token : 25.b55fe1d287227ca97aab219bb249b8ab.315360000.1798284651.282335-8574074
+     * refresh_token : 25.b55fe1d287227ca000.1798284651.282335-8574074
      * expires_in : 2592000
      * scope : public wise_adapt
      * session_key : 9mzdDZXu3dENdFZQurfg0Vz8slgSgvvOAUebNFzyzcpQ5EnbxbF+hfG9DQkpUVQdh4p6HbQcAiz5RmuBAja1JJGgIdJI

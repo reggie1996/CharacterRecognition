@@ -4,8 +4,8 @@ import java.util.List;
 
 /**
  * @author chaochaowu
- * @Description :
- * @classes :
+ * @Description : RecognitionResultBean
+ * @class : RecognitionResultBean
  * @time Create at 6/4/2018 4:48 PM
  */
 
