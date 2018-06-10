@@ -1,6 +1,7 @@
 package com.chaochaowu.characterrecognition.module;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -37,6 +38,8 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View{
 
+    private Context mContext;
+
     private ImageView imageView;
     private TextView textView;
     private Button button;
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mContext = this;
         imageView = findViewById(R.id.imageView);
         textView = findViewById(R.id.textView);
         button = findViewById(R.id.button);
@@ -61,6 +65,9 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
             @Override
             public void onClick(View v) {
                 takePhoto();
+                /*Resources r = mContext.getResources();
+                Bitmap bmp = BitmapFactory.decodeResource(r, R.drawable.test);
+                mPresenter.getRecognitionResultByImage(bmp);*/
             }
         });
 
